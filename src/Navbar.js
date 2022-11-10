@@ -1,5 +1,4 @@
-import ProfileInformation from './ProfileInformation';
-import './navbar.css';
+import './styles/navbar.css';
 
 import twitterLogo from './icons/twitter.png';
 import homeIcon from './icons/home.png';
@@ -35,7 +34,6 @@ const Navbar = () => {
                 </div>
 
                 <div className="profileInfo">
-                    <ProfileInformation />
                 </div>
 
             </div>
