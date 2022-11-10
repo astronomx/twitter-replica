@@ -1,0 +1,46 @@
+.tweetList {
+    margin-top: 6vh;
+}
+
+.tweetIndex {
+    width: 30vw;
+    height: auto;
+    padding-left: 8px;
+}
+
+.tweetIndex img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.seperator {
+    display: flex;
+    flex-direction: column;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.names p {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.tweetContent {
+    margin-left: 5px;
+}
+
+.tweetContent p {
+    margin-top: 0;
+}
