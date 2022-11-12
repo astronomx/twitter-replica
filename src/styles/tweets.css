@@ -6,6 +6,7 @@
     width: 30vw;
     height: auto;
     padding-left: 8px;
+    margin-bottom: 2vh;
 }
 
 .tweetIndex img{
@@ -22,6 +23,7 @@
 .seperator {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 .names {
@@ -35,10 +37,6 @@
     margin-top: 0;
     margin-left: 5px;
     text-align: left;
-}
-
-.tweetContent {
-    margin-left: 5px;
 }
 
 .tweetContent p {
