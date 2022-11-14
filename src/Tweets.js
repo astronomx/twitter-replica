@@ -12,7 +12,7 @@ const Tweets = ({ posts }) => {
 
                         <div className="seperator">
                             <div className="names">
-                                <p style={{fontWeight: "bold"}}>{post.name}</p>
+                                <p style={{marginLeft: "0px", fontWeight: "bold"}}>{post.name}</p>
                                 <p style={{color: "#71767b"}}>@{post.user}</p>
                             </div>
 
