@@ -6,12 +6,12 @@
     width: 30vw;
     height: auto;
     padding-left: 8px;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 .tweetIndex img{
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
 }
 

@@ -27,7 +27,9 @@ function App() {
       <div className="nav">
         <Navbar />
       </div>
-      <Tweets posts={posts} />
+      <div className="tweets">
+        <Tweets posts={posts} />
+      </div>
     </div>
   );
 }
