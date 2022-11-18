@@ -1,0 +1,10 @@
+.container {
+    margin-top: 2vh;
+}
+
+.trends {
+    background-color: #16181c;
+    width: 20vw;
+    height: 80vh;
+    border-radius: 20px;
+}

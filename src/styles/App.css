@@ -16,9 +16,9 @@ body {
     height:100%;
 }
 
-.nav {
+/* .nav {
     margin-right: 1vw;
-}
+} */
 
 .content {
     display: flex;
@@ -30,6 +30,8 @@ body {
     border-left: solid 1px #4b4b4b;
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     height: auto;
 }
 
