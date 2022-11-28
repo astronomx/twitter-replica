@@ -1,0 +1,17 @@
+.trendInfo > p {
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: #71767b;
+}
+
+.trend > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tweetAmount > p {
+    margin-top: 0px;
+    font-size: 13px;
+    color: #71767b;
+}
+

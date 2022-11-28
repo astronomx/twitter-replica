@@ -1,10 +1,10 @@
 import './styles/tweets.css';
 
 
-const Tweets = ({ posts }) => {
+const Tweets = ({ tweetsData }) => {
     return ( 
         <div className="tweetList">
-            {posts.map((post) => (
+            {tweetsData.map((post) => (
                 <div className="tweetIndex">
 
                     <div className="profileInfo">
@@ -20,7 +20,6 @@ const Tweets = ({ posts }) => {
                                 <p style={{fontSize: "15px"}}>{post.post}</p>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             ))}
