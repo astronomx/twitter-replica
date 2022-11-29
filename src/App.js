@@ -15,7 +15,7 @@ import ethereumProfile from './profilePictures/ethereumProfile.jpg';
 
 function App() {
 
-  const[posts] = useState([
+  const[post, setPost] = useState([
     {id: uuidv4(), name: "Elon Musk", user: "elonmusk", pfp: elonProfile, post: "I just bought Twitter because I felt a wide range of beliefs should be debated in a healthy manner"},
     {id: uuidv4(), name: "jack", user: "jack", pfp: jackProfile, post: "Just setting up my twttr"},
     {id: uuidv4(), name: "NBA", user: "NBA", pfp: nbaProfile, post: "The NBA selects Terrance Clark fly high kid R.I.P"},
@@ -36,6 +36,15 @@ function App() {
     {id: uuidv4(), trend: "Onana", tweets: "50.1K", category: "Netherlands"}
   ]);
 
+  const tweetDelete = (id) => {
+    const newTweets = post.filter(post => post.id !== id);
+    setPost(newTweets);
+  }
+
+  const trendDelete = (id) => {
+    const newTrends = trend.filter(trend => trend.id !== id);
+    setTrend(newTrends);
+  }
   
 
   return (
@@ -45,14 +54,14 @@ function App() {
       </div>
 
       <div className="tweets">
-        <Tweets tweetsData={posts} />
+        <Tweets tweetsData={post} tweetDelete={tweetDelete} />
       </div>
       
       
       <div className="background">
         <div className="trending">
           <h3>Trending for you</h3>
-          <Trends trendData={trend} />
+          <Trends trendData={trend} trendDelete={trendDelete} />
         </div>
       </div>
       

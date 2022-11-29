@@ -1,7 +1,7 @@
 import './styles/tweets.css';
 
 
-const Tweets = ({ tweetsData }) => {
+const Tweets = ({ tweetsData, tweetDelete }) => {
     return ( 
         <div className="tweetList">
             {tweetsData.map((post) => (
