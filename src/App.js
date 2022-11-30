@@ -11,6 +11,8 @@ import nbaProfile from './profilePictures/nbaProfile.jpg';
 import manjaroProfile from './profilePictures/manjaroProfile.png';
 import stephenProfile from './profilePictures/stephenProfile.jpg';
 import ethereumProfile from './profilePictures/ethereumProfile.jpg';
+import andrewProfile from './profilePictures/andrewProfile.jpg';
+import markusProfile from './profilePictures/markusProfile.jpg';
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
     {id: uuidv4(), name: "Manjaro Linux", user: "ManjaroLinux", pfp: manjaroProfile, post: "There will be a new laptop with pre-installed. Some specs you can choose from: AMD Ryzen 7 6800H w/ 64GB DDR5 MEM Intel Alder Lake Core i3-1215U w/ 16GB DDR5 MEM Intel Alder Lake Core i7-1255U w/ 32GB DDR5 MEM Intel Alder Lake Core i9-12900H w/ 64GB DDR5 MEM"},
     {id: uuidv4(), name: "Stephen King", user: "StephenKing", pfp: stephenProfile, post: "Musk makes me think of Tom Sawyer, who is given the job of whitewashing a fence as punishment. Tom cons his friends into doing the chore for him, and getting them to pay for the privilege. That's what Musk wants to do with Twitter. No, no, no."},
     {id: uuidv4(), name: "Ethereum", user: "ethereum", pfp: ethereumProfile, post: "Ask your mom and dad for some change to buy some ETH!"},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Markus Magnusson 🟢", user: "MotionMarkus", pfp: markusProfile, post: "So we’re all more or less calling it digital collectibles now right?"},
   ]);
 
   const [trend, setTrend] = useState([
@@ -40,7 +44,7 @@ function App() {
     const newTweets = post.filter(post => post.id !== id);
     setPost(newTweets);
   }
-
+  
   const trendDelete = (id) => {
     const newTrends = trend.filter(trend => trend.id !== id);
     setTrend(newTrends);
@@ -58,9 +62,9 @@ function App() {
       </div>
       
       
-      <div className="background">
-        <div className="trending">
-          <h3>Trending for you</h3>
+      <div className="trending">
+        <div className="list">
+          <h3 className="title" >Trending for you</h3>
           <Trends trendData={trend} trendDelete={trendDelete} />
         </div>
       </div>

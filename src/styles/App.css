@@ -31,7 +31,7 @@ body {
     height: auto;
 }
 
-.background {
+/* .background {
     z-index: 0;
     background-color: #16181c;
     width: 20vw;
@@ -43,5 +43,20 @@ body {
 .trending {
     position: absolute;
     z-index: 1;
+    margin-left: 1vw;
+} */
+
+/* .trending {
+    background: #16181c;
+    margin-top: 2vh;
+    width: 18vw;
+    border-radius: 20px;
+} */
+
+.list {
+    background: #16181c;
+    margin-top: 2vh;
+    width: 18vw;
+    border-radius: 20px;
     margin-left: 1vw;
 }
