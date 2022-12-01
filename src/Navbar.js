@@ -10,6 +10,7 @@ import bookmarkIcon from './icons/bookmark.png';
 import listIcon from './icons/list.png';
 import profileIcon from './icons/profile.png';
 import moreIcon from './icons/more.png';
+import menuProfile from './icons/menuProfile.png';
 
 
 
@@ -42,7 +43,8 @@ const Navbar = () => {
                     <div className="profileName">
                         <p className="displayName">1UPGENESIS</p>
                         <p className="userName">@oneupgenesis</p>
-                    </div>    
+                    </div>
+                    <img src={menuProfile} alt="Menu" className='menu' />
                 </div>
 
             </div>
