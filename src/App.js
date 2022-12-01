@@ -64,7 +64,7 @@ function App() {
       
       <div className="trending">
         <div className="list">
-          <h3 className="title" >Trending for you</h3>
+          <h3 className="title">Trending for you</h3>
           <Trends trendData={trend} trendDelete={trendDelete} />
         </div>
       </div>
