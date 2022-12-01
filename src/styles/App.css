@@ -31,21 +31,6 @@ body {
     height: auto;
 }
 
-/* .background {
-    z-index: 0;
-    background-color: #16181c;
-    width: 20vw;
-    height: 82vh;
-    border-radius: 20px;
-    margin-top: 2vh;
-}
-
-.trending {
-    position: absolute;
-    z-index: 1;
-    margin-left: 1vw;
-} */
-
 .title {
     margin-left: 1vw;
     margin-bottom: 0px;

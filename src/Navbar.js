@@ -1,6 +1,7 @@
 import './styles/navbar.css';
 
 import twitterLogo from './icons/twitter.png';
+import pfp from './profilePictures/profilePicture.png';
 import homeIcon from './icons/home.png';
 import exploreIcon from './icons/explore.png';
 import notificationIcon from './icons/notification.png';
@@ -16,7 +17,7 @@ const Navbar = () => {
     return (  
         <nav className="navbar">
             <div className="links">
-                <a href="/"><img id="logo" src={twitterLogo} alt="logo" /></a>
+                <img id="logo" src={twitterLogo} alt="logo" />
 
                 <div className="navigation">
                     <button><img src={homeIcon} alt="homeIcon" /><span>Home</span></button>
@@ -34,6 +35,14 @@ const Navbar = () => {
                 </div>
 
                 <div className="profileInfo">
+                    <div className="photo">
+                        <img src={pfp} alt="PFP" className="pfp" />
+                    </div>
+
+                    <div className="profileName">
+                        <p className="displayName">1UPGENESIS</p>
+                        <p className="userName">@oneupgenesis</p>
+                    </div>    
                 </div>
 
             </div>

@@ -58,6 +58,9 @@ function App() {
       </div>
 
       <div className="tweets">
+        
+
+
         <Tweets tweetsData={post} tweetDelete={tweetDelete} />
       </div>
       
