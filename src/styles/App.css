@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans&display=swap');
+
+:root {
+    --greyBorder: #4b4b4b;
+}
+
 
 * {
     color: #ffffff;
@@ -22,13 +28,52 @@ body {
 }
 
 .tweets {
-    border-right: solid 1px #4b4b4b;
-    border-left: solid 1px #4b4b4b;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    border-right: solid 1px var(--greyBorder);
+    border-left: solid 1px var(--greyBorder);
+    margin-left: 32vw;
+    margin-right: 1vw;
     height: auto;
+}
+
+.homeBar {
+    position: fixed;
+    width: 554px;
+    height: 2.5vw;
+    backdrop-filter: blur(20px);
+}
+
+.barTitle {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.tweetBox {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 6.5vh;
+    border-bottom: solid 1px var(--greyBorder);
+}
+
+.tweetBox img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin-left: 13px;
+}
+
+.tweetBox textarea {
+    resize: none;
+    background: none;
+    width: 25vw;
+    margin-top: 5px;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--greyBorder);
 }
 
 .title {

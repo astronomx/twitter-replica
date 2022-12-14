@@ -5,6 +5,7 @@ import Tweets from './Tweets';
 import Trends from './Trends';
 
 import './styles/App.css';
+import profilePicture from './profilePictures/profilePicture.png';
 import elonProfile from './profilePictures/elonProfile.png';
 import jackProfile from './profilePictures/jackProfile.jpg';
 import nbaProfile from './profilePictures/nbaProfile.jpg';
@@ -13,6 +14,7 @@ import stephenProfile from './profilePictures/stephenProfile.jpg';
 import ethereumProfile from './profilePictures/ethereumProfile.jpg';
 import andrewProfile from './profilePictures/andrewProfile.jpg';
 import markusProfile from './profilePictures/markusProfile.jpg';
+import toughtsProfile from './profilePictures/thoughtsProfile.jpg';
 
 
 function App() {
@@ -25,7 +27,14 @@ function App() {
     {id: uuidv4(), name: "Stephen King", user: "StephenKing", pfp: stephenProfile, post: "Musk makes me think of Tom Sawyer, who is given the job of whitewashing a fence as punishment. Tom cons his friends into doing the chore for him, and getting them to pay for the privilege. That's what Musk wants to do with Twitter. No, no, no."},
     {id: uuidv4(), name: "Ethereum", user: "ethereum", pfp: ethereumProfile, post: "Ask your mom and dad for some change to buy some ETH!"},
     {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
     {id: uuidv4(), name: "Markus Magnusson 🟢", user: "MotionMarkus", pfp: markusProfile, post: "So we’re all more or less calling it digital collectibles now right?"},
+    {id: uuidv4(), name: "Toughts", user: "TheToughtsNFT", pfp: toughtsProfile, post: "FREE MINT DEC 13 (3 PM EST) Next 888 to RT and Drop eth address = Free mint"},
   ]);
 
   const [trend, setTrend] = useState([
@@ -49,7 +58,6 @@ function App() {
     const newTrends = trend.filter(trend => trend.id !== id);
     setTrend(newTrends);
   }
-  
 
   return (
     <div className="content">
@@ -58,10 +66,18 @@ function App() {
       </div>
 
       <div className="tweets">
+        <div className="homeBar">
+          <h3 className="barTitle">Home</h3>
+        </div>
+
+        <div className="tweetBox">
+            <img src={profilePicture} alt="pfp" />
+            <textarea className="tweet" placeholder="What's happening?"></textarea>
+        </div>
         
-
-
-        <Tweets tweetsData={post} tweetDelete={tweetDelete} />
+        <div className="seperatorTweets">
+          <Tweets tweetsData={post} tweetDelete={tweetDelete} />
+        </div>
       </div>
       
       
@@ -71,7 +87,6 @@ function App() {
           <Trends trendData={trend} trendDelete={trendDelete} />
         </div>
       </div>
-      
     </div>
   );
 }
