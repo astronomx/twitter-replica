@@ -22,6 +22,16 @@ body {
     height:100%;
 }
 
+#tweet {
+    width: 13vw;
+    height: 5vh;
+    background-color: #1d9bf0;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 28vh;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -37,7 +47,7 @@ body {
 
 .homeBar {
     position: fixed;
-    width: 554px;
+    width: 32.4vw;
     height: 2.5vw;
     backdrop-filter: blur(20px);
 }
@@ -50,22 +60,16 @@ body {
 
 .tweetBox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
     margin-top: 6.5vh;
     border-bottom: solid 1px var(--greyBorder);
 }
 
-.tweetBox img {
-    width: 47px;
-    height: 47px;
-    border-radius: 50%;
-    margin-left: 13px;
-}
-
 .tweetBox textarea {
     resize: none;
     background: none;
+    height: auto;
     width: 25vw;
     margin-top: 5px;
     margin-left: 1vw;
@@ -73,7 +77,34 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     border: none;
+}
+
+.tweetBox textarea:focus {
+    outline: none;
     border-bottom: 1px solid var(--greyBorder);
+}
+
+.iconsAndTweet {
+    margin-left: 4.5vw;
+    margin-bottom: 1vw;
+}
+
+.iconsAndTweet img {
+    width: 20px;
+    height: 20px;
+    padding-left: 1vw;
+}
+
+.tweetSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.tweetSection img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin-left: 13px;
 }
 
 .title {

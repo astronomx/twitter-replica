@@ -22,7 +22,7 @@ const Trends = ({ trendData, trendDelete }) => {
                             </div>
 
                             <div className="tweetAmount">
-                                <p>{trend.tweets}</p>
+                                <p>{trend.tweets} Tweets</p>
                             </div>
                         </div>
                     </div>

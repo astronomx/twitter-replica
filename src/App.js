@@ -4,6 +4,13 @@ import Navbar from './Navbar';
 import Tweets from './Tweets';
 import Trends from './Trends';
 
+import gallery from './icons/gallery.png';
+import gif from './icons/gif.png';
+import location from './icons/location.png';
+import poll from './icons/poll.png';
+import schedule from './icons/schedule.png';
+import smile from './icons/smile.png';
+
 import './styles/App.css';
 import profilePicture from './profilePictures/profilePicture.png';
 import elonProfile from './profilePictures/elonProfile.png';
@@ -15,7 +22,6 @@ import ethereumProfile from './profilePictures/ethereumProfile.jpg';
 import andrewProfile from './profilePictures/andrewProfile.jpg';
 import markusProfile from './profilePictures/markusProfile.jpg';
 import toughtsProfile from './profilePictures/thoughtsProfile.jpg';
-
 
 function App() {
 
@@ -41,6 +47,7 @@ function App() {
     {id: uuidv4(), trend: "Moroccan", tweets: "25.6K", category: "Netherlands"},
     {id: uuidv4(), trend: "Steve Jobs", tweets: "2,468", category: "Business & finance"},
     {id: uuidv4(), trend: "Forum", tweets: "60.1K", category: "Netherlands"},
+    {id: uuidv4(), trend: "NFTs", tweets: "655K", category: "Netherlands"},
     {id: uuidv4(), trend: "Portugal", tweets: "117K", category: "Sports"},
     {id: uuidv4(), trend: "#databreach", tweets: "1,556", category: "Technology"},
     {id: uuidv4(), trend: "Serbia", tweets: "111K", category: "Events"},
@@ -59,6 +66,13 @@ function App() {
     setTrend(newTrends);
   }
 
+  const [text, setText] = useState('');
+  const [tweet, setTweet] = useState('');
+    
+  const handleClick = () => {
+    setTweet(text);
+  };
+
   return (
     <div className="content">
       <div className="nav">
@@ -71,8 +85,26 @@ function App() {
         </div>
 
         <div className="tweetBox">
+          <div className="tweetSection">
             <img src={profilePicture} alt="pfp" />
-            <textarea className="tweet" placeholder="What's happening?"></textarea>
+            <textarea 
+              className="tweet" 
+              placeholder="What's happening?"
+              id="tweetArea" 
+              value={text}
+              onChange={e => setText(e.target.value)}  
+            />
+          </div>
+           
+          <div className="iconsAndTweet">
+            <img src={gallery} alt="gallery" />
+            <img src={gif} alt="gif" />
+            <img src={poll} alt="poll" />
+            <img src={smile} alt="smile" />
+            <img src={schedule} alt="schedule" />
+            <img src={location} alt="location" style={{filter: "grayscale(40%)"}} />
+            <TweetButton id="tweet" onClick={handleClick} />
+          </div>
         </div>
         
         <div className="seperatorTweets">
@@ -89,6 +121,18 @@ function App() {
       </div>
     </div>
   );
-}
+};
+
+const CharacterCounter = ({ text }) => {
+  return <p>{text.length} / 280</p>;
+};
+
+const TweetButton = ({ onClick }) => {
+  return (
+    <button onClick={onClick}>
+      Tweet
+    </button>
+  );
+};
 
 export default App;
