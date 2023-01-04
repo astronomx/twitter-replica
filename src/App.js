@@ -20,6 +20,12 @@ import manjaroProfile from './profilePictures/manjaroProfile.png';
 import stephenProfile from './profilePictures/stephenProfile.jpg';
 import ethereumProfile from './profilePictures/ethereumProfile.jpg';
 import andrewProfile from './profilePictures/andrewProfile.jpg';
+import streamingProfile from './profilePictures/streamingProfile.jpg';
+import aiProfile from './profilePictures/aiProfile.jpg';
+import passwordProfile from './profilePictures/passwordProfile.jpg';
+import printProfile from './profilePictures/printProfile.png';
+import remoteProfile from './profilePictures/remoteProfile.jpg';
+import realestateProfile from './profilePictures/realestateProfile.jpg';
 import markusProfile from './profilePictures/markusProfile.jpg';
 import toughtsProfile from './profilePictures/thoughtsProfile.jpg';
 
@@ -33,12 +39,12 @@ function App() {
     {id: uuidv4(), name: "Stephen King", user: "StephenKing", pfp: stephenProfile, post: "Musk makes me think of Tom Sawyer, who is given the job of whitewashing a fence as punishment. Tom cons his friends into doing the chore for him, and getting them to pay for the privilege. That's what Musk wants to do with Twitter. No, no, no."},
     {id: uuidv4(), name: "Ethereum", user: "ethereum", pfp: ethereumProfile, post: "Ask your mom and dad for some change to buy some ETH!"},
     {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
-    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
-    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
-    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
-    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
-    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
-    {id: uuidv4(), name: "Andrew Tate", user: "Cobratate", pfp: andrewProfile, post: "Fight the Matrix "},
+    {id: uuidv4(), name: "Streamingenthusiast", user: "ElizabethWilliams", pfp: streamingProfile, post: "With the rise of streaming services, it's never been easier to access all your favorite movies and TV shows online."},
+    {id: uuidv4(), name: "AIwizard", user: "MariaGarcia", pfp: aiProfile, post: "I can't believe how far artificial intelligence has come in the last few years. From chatbots to self-driving cars, the possibilities are endless!"},
+    {id: uuidv4(), name: "passwordpro", user: "JamesBrown", pfp: passwordProfile, post: "If you're not already using a password manager, now is the time to start. Protect your online accounts and personal information with"},
+    {id: uuidv4(), name: "3Dprintingfan", user: "DavidJohnson", pfp: printProfile, post: "3D printing is revolutionizing the way we think about manufacturing. Exciting times ahead!"},
+    {id: uuidv4(), name: "remoteofficepro", user: "MarySmith", pfp: remoteProfile, post: "With the increase in remote work, video conferencing tools have become a crucial part of our daily lives."},
+    {id: uuidv4(), name: "VRrealestateagent", user: "JohnDavis", pfp: realestateProfile, post: "The future is now: I just used virtual reality to tour a house I'm thinking of buying. No need to leave the comfort of my own home!"},
     {id: uuidv4(), name: "Markus Magnusson 🟢", user: "MotionMarkus", pfp: markusProfile, post: "So we’re all more or less calling it digital collectibles now right?"},
     {id: uuidv4(), name: "Toughts", user: "TheToughtsNFT", pfp: toughtsProfile, post: "FREE MINT DEC 13 (3 PM EST) Next 888 to RT and Drop eth address = Free mint"},
   ]);
@@ -67,11 +73,11 @@ function App() {
   }
 
   const [text, setText] = useState('');
-  const [tweet, setTweet] = useState('');
+  // const [tweet, setTweet] = useState('');
     
-  const handleClick = () => {
-    setTweet(text);
-  };
+  // const handleClick = () => {
+  //   setTweet(text);
+  // };
 
   return (
     <div className="content">
@@ -103,7 +109,7 @@ function App() {
             <img src={smile} alt="smile" />
             <img src={schedule} alt="schedule" />
             <img src={location} alt="location" style={{filter: "grayscale(40%)"}} />
-            <TweetButton id="tweet" onClick={handleClick} />
+            <TweetButton />
           </div>
         </div>
         
@@ -123,13 +129,13 @@ function App() {
   );
 };
 
-const CharacterCounter = ({ text }) => {
-  return <p>{text.length} / 280</p>;
-};
+// const CharacterCounter = ({ text }) => {
+//   return <p>{text.length} / 280</p>;
+// };
 
 const TweetButton = ({ onClick }) => {
   return (
-    <button onClick={onClick}>
+    <button className="smallTweetButton" onClick={onClick}>
       Tweet
     </button>
   );

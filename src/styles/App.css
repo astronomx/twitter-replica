@@ -22,14 +22,17 @@ body {
     height:100%;
 }
 
-#tweet {
-    width: 13vw;
-    height: 5vh;
+.smallTweetButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 35px;
+    margin-left: 9.5vw;
     background-color: #1d9bf0;
+    font-size: 15px;
     border-radius: 50px;
-    border: none;
-    font-size: 18px;
-    margin-bottom: 28vh;
+    font-weight: bold;
 }
 
 .content {
@@ -85,8 +88,10 @@ body {
 }
 
 .iconsAndTweet {
+    display: flex;
     margin-left: 4.5vw;
     margin-bottom: 1vw;
+    align-items: center;
 }
 
 .iconsAndTweet img {
