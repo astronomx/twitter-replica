@@ -17,7 +17,7 @@ const Tweets = ({ tweetsData, tweetDelete }) => {
                             </div>
 
                             <div className="tweetContent">
-                                <p style={{fontSize: "15px"}}>{post.post}</p>
+                                <p style={{fontSize: "1rem"}}>{post.post}</p>
                             </div>
                         </div>
                     </div>

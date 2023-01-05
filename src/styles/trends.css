@@ -13,7 +13,7 @@ button {
 
 .trendInfo > p {
     margin-bottom: 0px;
-    font-size: 13px;
+    font-size: 0.8rem;
     color: #71767b;
 }
 
@@ -24,7 +24,7 @@ button {
 
 .tweetAmount > p {
     margin-top: 0px;
-    font-size: 13px;
+    font-size: 0.8rem;
     color: #71767b;
 }
 
