@@ -1,7 +1,6 @@
 # Twitter replica
 
-I started this project to see what i can do with **React** and to have a fun side project where I can be proud of when it's finished.
-The twitter page has a couple of functions. Just small ones like following, add tweets, delete tweets and change username.
+I started this project to see what i can do with **React** and to have a fun side project where I can work on. The twitter page has a couple of functions. Just small ones like following, add tweets, delete tweets and change username.
 
 ## How to run this project locally
 
